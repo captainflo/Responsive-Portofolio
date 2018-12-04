@@ -2,7 +2,13 @@ body{
     font-family: 'Roboto', Helvetica, sans-serif !important;
     padding: 0;
     margin: 0;
-    background-image: url("../images/white_wall.png")
+    background-image: url("../images/white_wall.png");
+    min-height: 100%;
+    position: relative;
+  }
+  html {
+    height: 100%;
+    box-sizing: border-box;
   }
 /* header */
 .nav{
@@ -46,7 +52,7 @@ body{
     text-decoration: none;
     color: #cccccc;
 }
-.nav a:hover { color: #4aaaa5; }
+.nav a:hover { color: #4aaaa5 ; }
 /* End */
 
 /* Portfolio */
@@ -56,12 +62,10 @@ body{
     .block{
         max-width: 980px;
         display: block;
-        margin: 60px auto 40px auto;
+        margin: 80px auto 80px auto;
         background: #ffffff;
         padding: 30px;
         border-radius: 8px;
-        max-height: 500px;
-        overflow: auto;
     }
     .block h1{
         color: #4aaaa5; 
@@ -216,9 +220,6 @@ footer p{
     }
     /* End */
     /* Footer */
-    footer{
-        position: none;
-    }
     footer p{
         padding-top: 2px;
         text-align: center;
@@ -230,11 +231,9 @@ footer p{
 /* // Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     .block{
-        margin: 0px auto 40px auto;
+        margin: 80px auto 80px auto
     }
     .block-text{
         margin-top: 165px;
-    }
-    
-        
+    }    
  }
